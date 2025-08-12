@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus - Smoke-Free Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">Lotus</div>
+                <button class="nav-link" onclick="scrollToSection('newsletter')">Newsletter</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Begin Your Smoke-Free Journey</h1>
+            <p class="hero-subtitle">Track your progress, collect lotus flowers, and celebrate every milestone</p>
+            <button class="btn btn--primary btn--lg" onclick="scrollToSection('tracker')">Start Tracking</button>
+        </div>
+    </section>
+
+    <!-- Tracker Section -->
+    <section id="tracker" class="tracker">
+        <div class="container">
+            <div class="tracker-content">
+                <h2>Your Progress</h2>
+                <div class="input-group">
+                    <label for="daysInput" class="form-label">How many days have you been smoke-free?</label>
+                    <input type="number" id="daysInput" class="form-control" min="0" placeholder="Enter number of days" />
+                </div>
+                
+                <div class="lotus-display">
+                    <h3 id="lotusCount">You have earned 0 lotus flowers</h3>
+                    <div id="lotusContainer" class="lotus-grid"></div>
+                </div>
+
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <h4>Progress to Next Milestone</h4>
+                        <p id="nextMilestone">Enter your days to see progress</p>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="milestones-checklist">
+                    <h4>Milestones Achieved</h4>
+                    <div id="milestonesList" class="milestones-list"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestones Detail Section -->
+    <section id="milestones" class="milestones-detail">
+        <div class="container">
+            <h2>Your Journey Milestones</h2>
+            <div id="milestonesCards" class="milestones-cards"></div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Connected</h2>
+                <p>Join our newsletter for motivation, tips, and support on your smoke-free journey</p>
+                
+                <form id="newsletterForm" class="newsletter-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Join Lotus Newsletter</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Lotus</div>
+                    <p>Supporting your smoke-free journey</p>
+                </div>
+                <div class="footer-social">
+                    <div class="social-icons">
+                        <div class="social-icon" aria-label="Facebook"></div>
+                        <div class="social-icon" aria-label="Twitter"></div>
+                        <div class="social-icon" aria-label="Instagram"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lotus. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+        <a href="https://github.com/pradeepbarik7" target="_blank" class="fab fab--github" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/>
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/pradeepbarik/" target="_blank" class="fab fab--linkedin" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect width="4" height="12" x="2" y="9"/>
+                <circle cx="4" cy="4" r="2"/>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/damnbarik/" target="_blank" class="fab fab--instagram" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
